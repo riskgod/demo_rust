@@ -1,0 +1,27 @@
+[package]
+name = "rust_learn"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+reqwest = "0.11"
+bellperson = "0.12.1"
+bls12_381 = "0.8.0"
+rand = "0.8.5"
+ff = "0.11.0"
+funty = "2.0.0"
+
+[[bin]]
+name = "async_demo"
+path = "src/async_demo.rs"
+
+[[bin]]
+name = "macro_demo"
+path = "src/macro_demo.rs"
+
+[[bin]]
+name = "mpc_demo"
+path = "src/mpc_demo.rs"
